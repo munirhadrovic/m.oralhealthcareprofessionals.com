@@ -146,7 +146,7 @@
 			    <!-- Jssor Slider End -->
 				<fieldset class="ui-grid-a" data-theme="<?php echo $theme ?>">
 					<!-- OVDJE SE UPISUJE BROJ TELEFONA KOJI TREBA POZVATI  -->
-					<div class="ui-block-a"><a class="ui-btn ui-icon-phone ui-btn-icon-left buttons-radius" href="tel:<?php echo $telephone ?>">Call US</a></div>
+					<div class="ui-block-a"><a class="ui-btn ui-icon-phone ui-btn-icon-top buttons-radius" href="tel:<?php echo $telephone ?>">Call US</a></div>
 					<!-- ovdje se upisuje grad i adresa iz koje  -->
 					<div class="ui-block-b" id="findUS">
 						<script>
@@ -155,7 +155,7 @@
 								console.log("Android uslo");
 								var prostordugme=document.getElementById('findUS');
 								var dugme= document.createElement('a');
-								dugme.setAttribute('class', "ui-btn ui-icon-location ui-btn-icon-left buttons-radius");
+								dugme.setAttribute('class', "ui-btn ui-icon-location ui-btn-icon-top buttons-radius");
 								dugme.setAttribute('href',"geo:0,0?q=<?php echo $adresa; ?>,<?php echo $grad; ?>,<?php echo $skracenica; ?>");
 								dugme.innerHTML="Find US";
 								prostordugme.appendChild(dugme);
@@ -164,7 +164,7 @@
 								console.log("Iphone ");
 								var prostordugme=document.getElementById('findUS');
 								var dugme= document.createElement('a');
-								dugme.setAttribute('class', "ui-btn ui-icon-location ui-btn-icon-left buttons-radius");
+								dugme.setAttribute('class', "ui-btn ui-icon-location ui-btn-icon-top buttons-radius");
 								dugme.setAttribute('href',"http://maps.google.com/?daddr=<?php echo $adresa; ?>,<?php echo $grad; ?>,<?php echo $skracenica; ?> ");
 								dugme.innerHTML="Find US";
 								prostordugme.appendChild(dugme);
@@ -174,7 +174,7 @@
 									console.log("Blakberu je prosao ")
 									var prostordugme=document.getElementById('findUS');
 									var dugme= document.createElement('a');
-									dugme.setAttribute('class', "ui-btn ui-icon-location ui-btn-icon-left buttons-radius");
+									dugme.setAttribute('class', "ui-btn ui-icon-location ui-btn-icon-top buttons-radius");
 									dugme.setAttribute('href',"javascript:blackberry.launch.newMap({'address':{'address1':'<?php echo $adresa; ?>,<?php echo $grad; ?>,<?php echo $skracenica; ?>'}});");
 									dugme.innerHTML="Find US";
 									prostordugme.appendChild(dugme);
@@ -183,7 +183,7 @@
 								console.log("nije nigdje uslo default ")
 								var prostordugme=document.getElementById('findUS');
 								var dugme= document.createElement('a');
-								dugme.setAttribute('class', "ui-btn ui-icon-location ui-btn-icon-left buttons-radius");
+								dugme.setAttribute('class', "ui-btn ui-icon-location ui-btn-icon-top buttons-radius");
 								dugme.setAttribute('href',"geo:0,0?q=<?php echo $adresa; ?>,<?php echo $grad; ?>,<?php echo $skracenica; ?>");
 								dugme.innerHTML="Find US";
 								prostordugme.appendChild(dugme);
