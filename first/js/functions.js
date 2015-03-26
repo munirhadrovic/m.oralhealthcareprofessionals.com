@@ -1,6 +1,5 @@
 $(document).ready(function() {
-var stranica = (window.location.pathname).split("/");
-
+    var stranica = (window.location.pathname).split("/");
 
 
 
