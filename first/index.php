@@ -100,7 +100,6 @@
 		      	});
 
 		    });		
-			
     	</script>
     	
 	</head>
@@ -112,9 +111,9 @@
 			
 		?>
 		<div id="header-image" data-role="header" data-theme="<?php echo $theme ?>" data-position="fixed">
-		    <h1><img src="img/logo.png" alt="LOGO"></h1>
+		    <h1><a href="#page1"><img src="img/logo.png" alt="LOGO"></a></h1>
 		</div>
-		<div data-role="footer" data-theme="<?php echo $theme ?>" data-position="fixed">
+		<div data-role="footer" data-theme="<?php echo $theme ?>">
 			<h1>Powered by <a href="http://mobilegrows.com/">MobileGrows</a> | <a href="http://oralhealthcareprofessionals.com/" rel="external">Desktop Site</a></h1>
 		</div>
 		<!-- page 1 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
@@ -144,9 +143,9 @@
 				    </ul>
 			    </div>
 			    <!-- Jssor Slider End -->
-				<fieldset class="ui-grid-a" data-theme="<?php echo $theme ?>">
+				<fieldset class="ui-grid-a callfind" data-theme="<?php echo $theme ?>">
 					<!-- OVDJE SE UPISUJE BROJ TELEFONA KOJI TREBA POZVATI  -->
-					<div class="ui-block-a"><a class="ui-btn ui-icon-phone ui-btn-icon-top buttons-radius" href="tel:<?php echo $telephone ?>">Call US</a></div>
+					<div class="ui-block-a"><a class="ui-btn cf" href="tel:<?php echo $telephone ?>"><img src="img/call-01.png" alt=""></a></div>
 					<!-- ovdje se upisuje grad i adresa iz koje  -->
 					<div class="ui-block-b" id="findUS">
 						<script>
@@ -155,18 +154,18 @@
 								console.log("Android uslo");
 								var prostordugme=document.getElementById('findUS');
 								var dugme= document.createElement('a');
-								dugme.setAttribute('class', "ui-btn ui-icon-location ui-btn-icon-top buttons-radius");
+								dugme.setAttribute('class', "ui-btn cf");
 								dugme.setAttribute('href',"geo:0,0?q=<?php echo $adresa; ?>,<?php echo $grad; ?>,<?php echo $skracenica; ?>");
-								dugme.innerHTML="Find US";
+								dugme.innerHTML="<img src='img/location.png'>";
 								prostordugme.appendChild(dugme);
 							}
 							else if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
 								console.log("Iphone ");
 								var prostordugme=document.getElementById('findUS');
 								var dugme= document.createElement('a');
-								dugme.setAttribute('class', "ui-btn ui-icon-location ui-btn-icon-top buttons-radius");
+								dugme.setAttribute('class', "ui-btn cf");
 								dugme.setAttribute('href',"http://maps.google.com/?daddr=<?php echo $adresa; ?>,<?php echo $grad; ?>,<?php echo $skracenica; ?> ");
-								dugme.innerHTML="Find US";
+								dugme.innerHTML="<img src='img/location.png'>";
 								prostordugme.appendChild(dugme);
 							}
 							else if (ua.indexOf("BlackBerry") >= 0) {
@@ -174,18 +173,18 @@
 									console.log("Blakberu je prosao ")
 									var prostordugme=document.getElementById('findUS');
 									var dugme= document.createElement('a');
-									dugme.setAttribute('class', "ui-btn ui-icon-location ui-btn-icon-top buttons-radius");
+									dugme.setAttribute('class', "ui-btn cf");
 									dugme.setAttribute('href',"javascript:blackberry.launch.newMap({'address':{'address1':'<?php echo $adresa; ?>,<?php echo $grad; ?>,<?php echo $skracenica; ?>'}});");
-									dugme.innerHTML="Find US";
+									dugme.innerHTML="<img src='img/location.png'>";
 									prostordugme.appendChild(dugme);
 									}		
 							else {
 								console.log("nije nigdje uslo default ")
 								var prostordugme=document.getElementById('findUS');
 								var dugme= document.createElement('a');
-								dugme.setAttribute('class', "ui-btn ui-icon-location ui-btn-icon-top buttons-radius");
+								dugme.setAttribute('class', "ui-btn cf");
 								dugme.setAttribute('href',"geo:0,0?q=<?php echo $adresa; ?>,<?php echo $grad; ?>,<?php echo $skracenica; ?>");
-								dugme.innerHTML="Find US";
+								dugme.innerHTML="<img src='img/location.png'>";
 								prostordugme.appendChild(dugme);
 							}
 
@@ -194,11 +193,8 @@
 							// if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 							// // some code..
 							// }
-
 						</script>
-						
-						
-
+												
 					</div>	   
 				</fieldset>
 				<div class="ui-grid-solo" data-theme="<?php echo $theme ?>">
@@ -296,7 +292,7 @@
 							Subject: <input type="text" id="onderwerp" name="onderwerp" value="" placeholder="Subject" required/>
 							Message:
 							<textarea style="height:100px;" id="bericht" name="bericht" placeholder="Enter your message here..." required></textarea>
-							<input type="submit" value="Send" name="submit" class="btn">
+							<input type="submit" value="Submit" name="submit" class="btn">
 						</form>
 					</div>
 				</div>
@@ -559,7 +555,25 @@
 	
 		<script type="text/javascript" src="js/responsiveslides.js"></script>    
 	
-	   
+	   <script src="js/easing.js" type="text/javascript"></script>
+		<!-- UItoTop plugin -->
+		<script src="js/jquery.ui.totop.js" type="text/javascript"></script>
+		<!-- Starting the plugin -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				/*
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				*/
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
 		
 	</body>
 </html>

@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cd10e20-8c01-46c1-a09d-15be81d872bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/css/images/ajax-loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/css/images/anchor_white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\m.oralhealthcareprofessionals.com\first\img\bg-trans.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/js/functions.js" afterPath="$PROJECT_DIR$/first/js/functions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/img/call-01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/img/location.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/img/themes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/css/images/ui.totop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/js/easing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/js/jquery.ui.totop.js" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\m.oralhealthcareprofessionals.com\first\css\images\anchor_white.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\m.oralhealthcareprofessionals.com\first\img\themes.gif" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/img/slider-images/Screenshot_5.png" afterPath="$PROJECT_DIR$/first/img/slider-images/Screenshot_5.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/index.php" afterPath="$PROJECT_DIR$/first/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/css/jquery.mobile-1.4.5.css" afterPath="$PROJECT_DIR$/first/css/jquery.mobile-1.4.5.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/css/slicknav.css" afterPath="$PROJECT_DIR$/first/css/slicknav.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/css/style-mobile.css" afterPath="$PROJECT_DIR$/first/css/style-mobile.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="m.oralhealthcareprofessionals.com.iws" />
@@ -37,8 +43,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/first/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.2199074" vertical-offset="1632" max-vertical-offset="9707">
-              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.4541231" vertical-offset="1938" max-vertical-offset="9945">
+              <caret line="137" column="23" selection-start-line="137" selection-start-column="23" selection-end-line="137" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -98,6 +104,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -204,7 +211,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -227,9 +233,6 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -237,6 +240,9 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -258,7 +264,13 @@
       <option name="project" value="LOCAL" />
       <updated>1425896710975</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="edited">
+      <created>1427377252725</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1427377252725</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -312,6 +324,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/first/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9707">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/first/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9707">
@@ -436,8 +456,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/first/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2199074" vertical-offset="1632" max-vertical-offset="9707">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.4541231" vertical-offset="1938" max-vertical-offset="9945">
+          <caret line="137" column="23" selection-start-line="137" selection-start-column="23" selection-end-line="137" selection-end-column="23" />
           <folding />
         </state>
       </provider>
